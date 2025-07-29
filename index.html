@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Face Generator PWA (Touch Gestures)</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#333333">
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}
+</script>
+</head>
+<body>
+<h2>Stylized Face Generator (Touch Gestures Enabled)</h2>
+<canvas id="faceCanvas" width="500" height="500"></canvas>
+<div>
+  <button onclick="randomize()">🎲 Randomize</button>
+  <button onclick="saveImage()">💾 Save PNG</button>
+</div>
+<div id="gallery"></div>
+<script src="script.js"></script>
+</body>
+</html>
